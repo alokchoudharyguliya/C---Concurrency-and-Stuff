@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(cpu_lab LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(cpu_lab src/main.cpp src/report.cpp src/cpu_info_macos.cpp src/cpu_info_linux.cpp)
+target_include_directories(cpu_lab PRIVATE include)
