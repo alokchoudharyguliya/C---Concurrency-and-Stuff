@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(cache_lab LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_executable(cache_lab src/main.cpp src/timer.cpp src/alloc.cpp src/sequential.cpp src/metrics.cpp src/report.cpp src/stride.cpp src/random.cpp )
+target_include_directories(cache_lab PRIVATE include)
